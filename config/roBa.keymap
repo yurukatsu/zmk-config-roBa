@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 
 #define MOUSE 4
@@ -68,10 +67,10 @@
 
         arrow+mouse {
             bindings = <
-&none           &kp UP_ARROW    &none            &none       &none                                                     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT  &kp HOME
-&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none    &kp HOME                  &mkp RCLK              &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW  &kp END
-&none           &none           &none            &none       &none    &kp END                   &mkp LCLK              &mkp MB4        &none           &none         &mkp MB5         &kp PAGE_UP
-&kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT     &kp ESCAPE  &kp TAB  &mt LEFT_SHIFT SPACE      &mt RIGHT_SHIFT ENTER  &kp BACKSPACE                                                  &kp PAGE_DOWN
+&none           &kp UP_ARROW    &none            &none       &none                                                     &none           &kp K_SCROLL_UP  &kp K_SCROLL_DOWN  &none            &kp HOME
+&kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none    &mkp LCLK                 &mkp RCLK              &kp LEFT_ARROW  &kp DOWN_ARROW   &kp UP_ARROW       &kp RIGHT_ARROW  &kp END
+&none           &none           &none            &none       &none    &none                     &none                  &mkp MB4        &none            &none              &mkp MB5         &kp PAGE_UP
+&kp LCTRL       &kp LEFT_WIN    &kp LEFT_ALT     &kp ESCAPE  &kp TAB  &mt LEFT_SHIFT SPACE      &mt RIGHT_SHIFT ENTER  &kp BACKSPACE                                                        &kp PAGE_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
